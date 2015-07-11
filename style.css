@@ -1,0 +1,66 @@
+/* This is how to keep the scroll bar fixed to the top of the screen when the scrolling starts and to keep it at 100% width */
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 0;
+    margin-bottom: 70px;
+}
+
+
+#nav.affix-top {
+    margin-bottom: 0px;   
+}
+
+nav {
+    margin-bottom: 0px;
+}
+
+.navbar {
+    width: 100%;   
+    border: 0px;
+    margin-bottom: 0px;
+    z-index: 999;
+}
+
+
+/*
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+*/
+
+.jumbotron {
+    height: 600px;
+    margin-bottom: 0px;
+    background-image: url(images/background.JPG);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+#about {
+    margin-top: 70px;
+    
+}
+
+
+#portfolio {
+    margin-top: 70px;
+    background-color: black;
+    color: azure;
+    text-shadow: 5px 2px 25px white;
+    
+}
+
+#portfolio img {
+    padding-bottom: 10px;
+    
+}
+
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
