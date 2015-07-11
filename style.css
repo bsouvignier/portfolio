@@ -30,6 +30,12 @@ nav {
 }
 */
 
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
 .jumbotron {
     height: 600px;
     margin-bottom: 0px;
@@ -42,6 +48,10 @@ nav {
 #about {
     margin-top: 70px;
     
+}
+
+#about h1 {
+    text-shadow: 5px 2px 30px grey;   
 }
 
 
@@ -58,9 +68,27 @@ nav {
     
 }
 
-h1 {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    
+
+
+#education {
+    background-image: url(images/education.jpg);
+    background-size: cover;
+}
+#education h1 {
+    color: azure;
+    text-shadow: 5px 2px 25px black;
 }
 
+#hennepintech {
+    background-color: #f26522; 
+    color: #ffffff;
+    border-color: #ed560e;
+    font-family: "Din", Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+#hennepintech h2 {
+    font-weight: bold; 
+    font-family: "Din", Arial, Helvetica, sans-serif;
+    
+}
