@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 /* This is how to keep the scroll bar fixed to the top of the screen when the scrolling starts and to keep it at 100% width */
 #nav.affix {
     position: fixed;
@@ -43,6 +47,18 @@ h1 {
     background-repeat: no-repeat;
     background-size:cover;
     
+}
+.jumbotron h1 {
+    font-size: 5em;
+    text-shadow: 2px 2px 25px white;
+}
+
+.jumbotron h2 {
+    text-shadow: 1px 1px 10px white;
+}
+.jumbotron small {
+    color: white;
+    text-shadow: 2px 2px 15px black;
 }
 
 #about {

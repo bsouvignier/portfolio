@@ -25,10 +25,12 @@
 </head>
 
 <body>
+<div data-spy="scroll" data-target=".navbar">
 
-
-    <!-- Title for Portfolio -->
-
+    <!-- Title for Page -->
+ 
+    
+    <div id="home">
     <div class="jumbotron">
         <div class="container">
             <div class="row">
@@ -44,7 +46,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
 
 
@@ -56,13 +58,13 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Home</a>
+                    <a class="navbar-brand" href="#home">Home</a>
                 </div>
 
 
@@ -75,11 +77,13 @@
                         <li><a href="#portfolio">Portfolio</a>
                         </li>
                         <li role="separator" class="divider"></li>
+                        <li><a href="#education">Education</a>
+                        <li role="separator" class="divider"></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#education">Education</a>
-                                </li>
+                                
+                                
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Another action</a>
                                 </li>
@@ -152,20 +156,20 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo2.jpg">
+            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo2.jpg" alt="shut up w3 validator">
             </div>
-            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo3.jpg">
+            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo3.jpg" alt="shut up w3 validator">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo4.jpg">
+            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo4.jpg" alt="shut up w3 validator">
             </div>
-            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo5.jpg">
+            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo5.jpg" alt="shut up w3 validator">
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3 col-md-3"></div>
-            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo6.jpg">
+            <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo6.jpg" alt="shut up w3 validator">
             </div>
             <div class="col-sm-3 col-md-3"></div>
         </div>
@@ -181,7 +185,7 @@
 
         <div class="container" id="hennepintech">
 
-                <h2 class="text-center">Hennepin Technical College</h1>
+                <h2 class="text-center">Hennepin Technical College</h2>
                 <h3 class="text-center">
                 Network Administrator/Analyst
                 </h3>
@@ -240,15 +244,28 @@
 
 
 
-    </div>
 
 
-
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- This script closes the nav panel after clicking -->
+<script>
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+</script>
+
+<!-- Scroll Spy -->
+<script>
+$('body').scrollspy({ target: '.navbar' })
+</script>
 
     <!-- This tels #navbar to turn to #navbar.affix when scrolled to the desired height listed in the html -->
     <script>
