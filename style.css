@@ -9,11 +9,13 @@ body {
     width: 100%;
     border: 0;
     margin-bottom: 70px;
+    box-shadow: 0px 5px 5px grey;
 }
 
 
 #nav.affix-top {
-    margin-bottom: 0px;   
+    margin-bottom: 0px;  
+    
 }
 
 nav {
@@ -21,6 +23,7 @@ nav {
 }
 
 .navbar {
+    
     width: 100%;   
     border: 0px;
     margin-bottom: 0px;
@@ -62,6 +65,7 @@ h1 {
 }
 
 #about {
+    box-shadow: 5px 5px 5px white;
     margin-top: 70px;
     
 }
@@ -72,6 +76,7 @@ h1 {
 
 
 #portfolio {
+    box-shadow: 5px 5px 5px white;
     margin-top: 70px;
     background-color: black;
     color: azure;
@@ -80,15 +85,18 @@ h1 {
 }
 
 #portfolio img {
-    padding-bottom: 10px;
+    box-shadow: 1px 1px 5px grey;
+    margin-bottom: 10px;
     
 }
 
 
 
 #education {
+    box-shadow: 5px 5px 5px white;
     background-image: url(images/education.jpg);
     background-size: cover;
+    padding-bottom: 50px;
 }
 #education h1 {
     color: azure;
@@ -96,6 +104,7 @@ h1 {
 }
 
 #hennepintech {
+    box-shadow: 5px 5px 5px black;
     background-color: #f26522; 
     color: #ffffff;
     border-color: #ed560e;
@@ -104,7 +113,41 @@ h1 {
 }
 
 #hennepintech h2 {
-    font-weight: bold; 
+    text-shadow: 1px 1px 10px black;
     font-family: "Din", Arial, Helvetica, sans-serif;
     
+}
+
+#hennepintech h3 {
+    text-shadow: 1px 1px 10px black;
+    font-family: "Din", Arial, Helvetica, sans-serif;
+    
+}
+#hennepintech h4 {
+    text-shadow: 1px 1px 10px black;
+    font-family: "Din", Arial, Helvetica, sans-serif;
+    
+}
+
+#stcloud {
+    box-shadow: 5px 5px 5px black;
+    margin-top: 50px;
+    background-color: #a72c2d; 
+    color: #ffffff;
+    border-color: #ed560e;
+    font-family: "Din", Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+#stcloud h2 {
+    text-shadow: 1px 1px 10px black;
+    font-family: "Din", Arial, Helvetica, sans-serif;   
+}
+#stcloud h3 {
+    text-shadow: 1px 1px 10px black;
+    font-family: "Din", Arial, Helvetica, sans-serif;   
+}
+#stcloud h4 {
+    text-shadow: 1px 1px 10px black;
+    font-family: "Din", Arial, Helvetica, sans-serif;   
 }
