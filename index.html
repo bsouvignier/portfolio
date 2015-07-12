@@ -30,9 +30,8 @@
     <!-- Title for Page -->
  
     
-    <div id="home">
-    <div class="jumbotron">
-        <div class="container">
+    <div class="container-fluid" id="home">
+        <div class="jumbotron"> 
             <div class="row">
                 <h1 class="text-center">Ben Souvignier</h1>
             </div>
@@ -44,7 +43,6 @@
                     <h2 class="text-center"><small>phone:</small>605-212-0317</h2>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
@@ -52,7 +50,7 @@
 
 
     <!-- This next line is what changes (data-spy) when JavaScript is enabled so the navbar scrolls with the page when it hits the top -->
-    <div class="navbar" data-spy="affix" data-offset-top="600" id="nav">
+    <div class="navbar" data-spy="affix" data-offset-top="500" id="nav">
 
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container-fluid">
@@ -64,7 +62,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#home">Home</a>
+                    <a class="navbar-brand" href="#home">Ben Souvignier</a>
                 </div>
 
 
@@ -78,6 +76,8 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#portfolio">Portfolio</a>
                         </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#work">Work</a>
                         <li role="separator" class="divider"></li>
                         <li><a href="#education">Education</a>
                         <li role="separator" class="divider"></li>
@@ -135,21 +135,39 @@
 
 
     <div class="container-fluid" id="about">
-
+       <div class="container">
         <h1 class="text-center">All About Ben</h1>
+         <div class="row">
+             
+                          <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-sm-push-4 col-md-push-8 col-lg-push-6 col-xs-offset-1 col-sm-offset-0">
+        <img class="img-responsive img-circle" src="images/computer.JPG" alt="Ben at his computer">
+            </div>
+             
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 col-sm-pull-6 col-md-pull-4 col-lg-pull-3 col-md-offset-2">
         <p>
-
             Ben Souvignier is currently a System's Administrator and Video Producer for ECM Publishers and a student at Hennepin Technical College taking a variety of computer courses. He is continually furthering his education to remain competitive in the ever changing world of technology.
+            
         </p>
-        
+                </div>
+
+        <!--row div --></div>
+           <div class="row">
+               <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8 col-md-offset-2">
         <p>
         In his free time, Ben enjoys to traveling to both exotic locales and urban utopias, participating in in fun runs, such as Cupid's Undie Run and City Adventure Races, and doing something adventurous, such as the Great Bull Run, Skydiving, Rock Climbing, or White Water Rafting.  Ben is also an avid fan of craft beers and liquors and touring their breweries and distilleries.
         </p>
-        
+               </div>
+           <!--row div --></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8 col-md-offset-2">
         <p>
         Ben designed and created this site from scratch using HTML5, CSS, and Bootstrap.  If you would like to praise Ben for this fantastic website, or see if he is interested in a job you would like to offer him, or offer to fly him all expenses paid to a tropical location, or if you are lonely and need someone to talk to, please email him at <a href="mailto:bsouvignier@gmail.com">bsouvignier@gmail.com</a>
         
         </p>
+            </div>
+            </div>    
+                    <!-- row div --></div>
+           <!--container div --></div>
     <!--about div--></div>
         
 <div class="container-fluid" id="skills">
@@ -238,7 +256,7 @@
     
     <div class="container" id="languages">
         <h2 class="text-center">
-        Languages
+        Programming Languages
         </h2>
 
         
@@ -345,8 +363,32 @@
     <div class="container" id="ecmpublishers">
             <h2 class="text-center">ECM Publishers</h2>
             <h3 class="text-center">Systems Administrator</h3>
-            
-    
+        
+        
+        <p>At ECM Publishers, <br></p>
+                <h4 class="text-center">May 2013 - Present</h4>
+                <h3>Relevant Courses:</h3>
+                
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <ul class="list-unstyled">
+                <h4 class="text-center">Networking</h4>
+                <li>Network Essentials</li>
+                <li>CCNA 2: Basic Router and Switch Configuration</li>
+                <li>CCNA 3: Intermediate Router and Switch Configuration</li>
+                <li>CCNA 4: WANs, VPNs, and Enterprise Networks</li>
+            </ul>
+</div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <ul class="list-unstyled">
+                <h4 class="text-center">Windows Server</h4>
+                <li>Windows Admin 1</li>
+                <li>Windows Admin 2</li>
+                <li>Windows Admin 3</li>
+        </ul>
+                </div>
+        </div>
+        
         
         <!-- ecmpublishers div --></div>
     
@@ -504,7 +546,11 @@
                 
             <!--Education div --></div>
 
-
+    <footer>
+        <div class="container">
+            <p>Website copyright &copy; 2015 Ben Souvignier</p>
+        </div>
+    </footer>
 
 
 
@@ -566,6 +612,7 @@ $('body').scrollspy({ offset:70, target: '.navbar' })
 }); // close out script
     </script>
 
+    
 </body>
 
 </html>
