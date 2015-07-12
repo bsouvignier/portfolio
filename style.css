@@ -81,7 +81,10 @@ h1 {
 #about {
     box-shadow: 5px 5px 5px white;
     margin-top: 70px;
-    
+    margin-bottom: 50px;
+}
+#about p {
+      padding-bottom: 20px; 
 }
 
 #about h1 {
@@ -89,6 +92,7 @@ h1 {
 }
 
 #skills {
+    /*Photo from Lifehacker, figure out how to obtain rights to use*/
     background: url(images/skills.jpg) 0 10% fixed;  
     background-size: cover;
     margin: -.5em;
@@ -102,14 +106,19 @@ h1 {
 #skillset {
     background-color: beige;
     box-shadow: 5px 5px 5px darkgray;
+    margin-bottom: 50px;
 }
 #skillset ul{
     box-shadow: 1px 1px 20px bisque;
 }
+#languages {
+    background-color: azure;
+    box-shadow: 2px 2px 5px grey;
+}
+
 #portfolio {
     
     box-shadow: 5px 5px 5px white;
-    margin-top: 70px;
     background-color: black;
     color: azure;
     text-shadow: 5px 2px 25px white;
@@ -120,6 +129,14 @@ h1 {
     box-shadow: 1px 1px 5px grey;
     margin-bottom: 10px;
     
+}
+#work {
+    /* Stock Photo by Viktor Hanacek from picjumbo.com, Royalty Free, Restriction Free*/
+    background: url(images/picjumbo.com_HNCK4400.jpg) 0 20% fixed;
+    background-size: cover;
+}
+#work h1 {
+    text-shadow: 2px 2px 30px grey;   
 }
 
 #education {
@@ -155,8 +172,11 @@ h1 {
 }
 #hennepintech h4 {
     text-shadow: 1px 1px 10px black;
-    font-family: "Din", Arial, Helvetica, sans-serif;
-    
+    font-family: "Din", Arial, Helvetica, sans-serif;    
+}
+
+#hennepintech ul {
+    box-shadow: 1px 1px 20px #ed9500;   
 }
 
 #stcloud {
@@ -180,4 +200,7 @@ h1 {
 #stcloud h4 {
     text-shadow: 1px 1px 10px black;
     font-family: "Din", Arial, Helvetica, sans-serif;   
+}
+#stcloud ul {
+    box-shadow: 1px 1px 10px #ed5666;   
 }
