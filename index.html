@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="icomoon/icon.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#home">Ben Souvignier</a>
+                    <a class="navbar-brand" href="#home"><span class="icon-home3"> </span>Ben Souvignier</a>
                 </div>
 
 
@@ -81,7 +81,9 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#education">Education</a>
                         <li role="separator" class="divider"></li>
-                        <li class="dropdown">
+                        <li><a href="https://github.com/bsouvignier/"><span class="icon-github"></span></a>
+                        <li role="separator" class="divider"></li>
+   <!--                     <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 
@@ -100,8 +102,8 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
-                    <form class="navbar-form navbar-left" role="search">
+                    </ul> 
+                   <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
                         </div>
@@ -124,7 +126,7 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -639,7 +641,7 @@ $(document).ready(function () {
 
 <!-- Scroll Spy -->
 <script>
-$('body').scrollspy({ offset:50, target: '.navbar' })
+$('body').scrollspy({ offset:60, target: '.navbar' })
 </script>
 
     <!-- This tels #navbar to turn to #navbar.affix when scrolled to the desired height listed in the html -->
@@ -650,6 +652,18 @@ $('body').scrollspy({ offset:50, target: '.navbar' })
         };
         if (location.hash) shiftWindow();
         window.addEventListener("hashchange", shiftWindow);
+        
+// Add Class to compensate for fixed menu
+   //     $(window).scroll(function(event) {
+   //       var y = $(this).scrollTop();
+   //       if (y >= 500) {
+   //         $('#about').addClass('fixedheader');
+   //       } else {
+   //         $('#about').removeClass('fixedheader');
+   //       }
+   //     }); 
+        
+        
     </script>
     
     

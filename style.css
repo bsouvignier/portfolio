@@ -87,10 +87,14 @@ h1 {
     border-radius: 10px;   
 }
 
+/* #about.fixedheader {
+    margin-top: 30px;   
+} */
+
 #about {
     box-shadow: 5px 5px 5px white;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 #about p {
@@ -263,7 +267,9 @@ footer {
 
 /*Media query, iPhone6 size device for the headers text */
 @media screen and (max-width: 550px) {
-    
+#home {
+    background-position: 50% 0px;
+}
 #home h1 {
     font-size: 3.5em;   
 }
@@ -294,10 +300,21 @@ footer {
 /*Media query, For high resolutions */
 @media screen and (min-width: 1000px) {
 #home {
-    background-position: 50% -200px;
+    background-position: 50% -100px;
 }
-        
-/*End media query 1920px*/    }
+     
+/*End media query 1000px*/    }
+
+/*Media query, For high resolutions */
+@media screen and (min-width: 1400px) {
+#home {
+    background-position: 50% -300px;
+}
+     
+/*End media query 1400px*/    }
+
+
+
 
 /*Media query, For high resolutions */
 @media screen and (min-width: 1920px) {
@@ -306,3 +323,11 @@ footer {
 }
         
 /*End media query 1920px*/    }
+
+/*Media query, For high resolutions */
+@media screen and (min-width: 2200px) {
+#home {
+    background-position: 50% -700px;
+}
+     
+/*End media query 1000px*/    }
