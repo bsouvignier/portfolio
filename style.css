@@ -543,7 +543,7 @@ footer {
 @media screen and (max-width: 550px) {
 #home {
     background-position: 50% 0px;
-    background-size: auto;
+    background-size: 200%;
 }
 #home h1 {
     font-size: 3.5em;   
