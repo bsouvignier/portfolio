@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ben Souvignier's Portfolio</title>
+    <title>Ben Souvignier</title>
 
 
 
@@ -23,13 +23,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+    
 
+    
 <body>
     <div data-spy="scroll" data-target=".navbar">
-
+        
+        
         <!-- Title for Page -->
 
-
+<section class="home">
         <div class="container-fluid" id="home">
             <div class="jumbotron">
                 <div class="row">
@@ -43,9 +46,9 @@
                         <h2 class="text-center"><small>phone:</small>605-212-0317</h2>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            </div><!-- Jumbotron Div -->
+        </div><!-- Home Div -->
+</section><!-- Home Section -->
 
 
 
@@ -83,7 +86,9 @@
                                     <li role="separator" class="divider"></li>
                                     <li><a href="https://github.com/bsouvignier/"><span class="icon-github"></span></a>
                                         <li role="separator" class="divider"></li>
-                                        <!--                     <li class="dropdown">
+                                        <!--Commenting this out because I don't want to use it but want to remember the code
+
+    <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 
@@ -128,15 +133,13 @@
                         </li>
                     </ul> -->
                     </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
+                </div><!-- /.navbar-collapse -->
+            </nav><!-- /.container-fluid -->
+        </div><!-- Navbar div -->
 
 
 
-
+<section class="about">
         <div class="container-fluid" id="about">
             <div class="container">
                 <h1 class="text-center">All About Ben</h1>
@@ -169,15 +172,15 @@
                             Ben designed and created this site from scratch using HTML5, CSS, and Bootstrap. If you would like to praise Ben for this fantastic website, or see if he is interested in a job you would like to offer him, or offer to fly him all expenses paid to a tropical location, or if you are lonely and need someone to talk to, please email him at <a href="mailto:bsouvignier@gmail.com">bsouvignier@gmail.com</a>
 
                         </p>
-                    </div>
-
-                    <!-- row div -->
-                </div>
-                <!--container div -->
-            </div>
-            <!--about div-->
-        </div>
-
+                    </div><!-- column div -->
+                </div><!-- row div --> 
+            </div><!--container div -->
+        </div><!--about div-->
+</section><!-- About Section -->
+            
+            
+            
+<section class="skills">            
         <div class="container-fluid" id="skills">
             <h1 class="text-center">Skills</h1>
             <div class="container" id="skillset">
@@ -248,16 +251,9 @@
                             <li>Filler</li>
                         </ul>
 
-                    </div>
-
-
-
-                </div>
-
-
-                <!-- Skillset div-->
-            </div>
-
+                    </div><!--column div-->
+                </div><!--Row div-->
+            </div><!-- Skillset div-->
 
 
             <div class="container" id="languages">
@@ -308,57 +304,124 @@
                             <li>Filler</li>
                         </ul>
 
-                    </div>
-
-
-
-                    <!-- Row div -->
-                </div>
-
-
-
-
-
-                <!-- Language div-->
-            </div>
+                    </div><!--column div--> 
+                </div><!-- Row div -->  
+            </div><!-- Language div-->
+        </div><!-- Skills div -->
+</section> <!--Skills section -->
 
 
 
 
-            <!-- Skills div -->
-        </div>
+<!-- <section class="portfolio_head">
+<div class="container-fluid" id="portfolio">
+    <h1 class="text-center">Portfolio</h1>    
+</div>            
+</section> -->
+<section class="portfolio">
+<div class="container-fluid" id="portfolio">
 
+<a class="activator2" id="activator2">     
+  <div class="portfolio_item portfolio_item_1 portfolio_item_video">
+            <div class="portfolio_item_content">
+                <div class="portfolio_item_title">
+                    Video
+                </div><!--portfolio_item_title-->
+            </div><!--portfolio_item_content-->
+  </div><!--portfolion_item_video-->
+    </a>
 
+  <a class="activator" id="activator">    
+  <div class="portfolio_item portfolio_item_2 portfolio_item_web">
+            <div class="portfolio_item_content">
+                <div class="portfolio_item_title">
+                    Websites
+                </div><!--portfolio_item_title-->
+            </div><!--portfolio_item_content-->
+  </div><!--portfolion_item_web-->          
+        </a>  
+            
+            
+      
+  <div class="portfolio_item portfolio_item_3 portfolio_item_photoshop">
+            <div class="portfolio_item_content">
+                <div class="portfolio_item_title">
+                    Photoshop
+                </div><!--portfolio_item_title-->
+            </div><!--portfolio_item_content-->
+  </div><!--portfolion_item_photoshop-->                 
+            
+<!-- Page overlay Website-->
+    
+<div class="overlay" id="overlay" style="display:none;"></div>
 
+<div class="box" id="box">
+ <a class="boxclose" id="boxclose"></a>
+ <h1>Websites</h1>
+    <div class="box-content">
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <a href="https://rawgit.com/bsouvignier/ptCaseStudy/gh-pages/index.html" alt="Pacific Trails Website"><img class="img-responsive img-rounded center-block" src="images/pacific-trails.png" alt="Pacific Trails Website Picture"></a> 
+    </div><!--Col div--> 
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <a href="https://rawgit.com/bsouvignier/veggies-bootstrap/gh-pages/index.html" alt="Ms. B's Veggies Website"><img class="img-responsive img-rounded center-block" src="images/ms-b.png" alt="Ms. B's Veggies Website Image"></a> 
+        
+    </div><!--Col div-->
+    </div><!--box-content div-->  
+</div><!--Row div-->
+</div><!--Box div-->
+    
+<!-- End Page Overlay Website -->          
+ 
+ <!-- Page overlay Video -->
+    
+<div class="overlay" id="overlay" style="display:none;"></div>
 
-
-
-
-        <div class="container-fluid" id="portfolio">
-            <div class="container">
+<div class="box2" id="box2">
+ <a class="boxclose" id="boxclose"></a>
+ <h1>Websites</h1>
+    <div class="box-content">
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <a href="https://rawgit.com/bsouvignier/ptCaseStudy/gh-pages/index.html" alt="Pacific Trails Website"><img class="img-responsive img-rounded center-block" src="images/pacific-trails.png" alt="Pacific Trails Website Picture"></a> 
+    </div><!--Col div--> 
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <a href="https://rawgit.com/bsouvignier/veggies-bootstrap/gh-pages/index.html" alt="Ms. B's Veggies Website"><img class="img-responsive img-rounded center-block" src="images/ms-b.png" alt="Ms. B's Veggies Website Image"></a> 
+        
+    </div><!--Col div-->
+    </div><!--box-content div-->  
+</div><!--Row div-->
+</div><!--Box div-->
+    
+<!-- End Page Overlay Video-->     
+    
+    
+            
+ <!--           <div class="container">  -->
 
 
                 <!-- Not sure what I want to do in this section yet, just throwing around ideas Look at http://karimrashid.com/ -->
-                <div class="row">
+   <!--             <div class="row">
 
                     <div class="col-md-12">
-                        <h1 class="text-center">Portfolio</h1>
+                        
                     </div>
 
                 </div>
-
-
+             
+    -->           
+                
                 <!-- Carousel -->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!--                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  -->
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+ <!--                   <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                     </ol>
-
+-->
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+ <!--                   <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img src="images/sand-castle.jpg" alt="sand castle">
                             <div class="carousel-caption">
@@ -373,9 +436,9 @@
                         </div>
                         The most amazing Pictures
                     </div>
-
+-->
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+ <!--                   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
@@ -386,7 +449,7 @@
                 </div>
 
 
-
+-->
                 <!--   /Carousel -->
 
 
@@ -398,7 +461,7 @@
 
 
 
-                <div class="row">
+ <!--               <div class="row">
                     <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo2.jpg" alt="shut up w3 validator">
                     </div>
                     <div class="col-sm-6 col-md-6"><img class="img-responsive img-rounded center-block" src="images/photo3.jpg" alt="shut up w3 validator">
@@ -418,10 +481,14 @@
                 </div>
 
 
-                <!-- container div -->
-            </div>
-            <!-- portfolio div -->
-        </div>
+ -->               
+ <!--           </div><!-- container div -->
+            </div><!-- portfolio div -->
+            </section><!--portfolio section -->
+            
+            
+            
+<section class="work">
         <div class="container-fluid" id="work">
             <h1 class="text-center">Work History</h1>
 
@@ -455,19 +522,16 @@
                             <li>Windows Admin 2</li>
                             <li>Windows Admin 3</li>
                         </ul>
-                    </div>
-                </div>
-
-
-
-                <!-- ecmpublishers div -->
-            </div>
-
-
-
-            <!-- work div -->
-        </div>
-
+                    </div><!--column div-->
+                </div><!--row div-->
+        </div><!-- ecmpublishers div -->   
+        </div><!-- work div -->
+</section><!-- work Section -->
+            
+            
+            
+            
+<section class="education">            
         <div class="container-fluid" id="education">
 
             <h1 class="text-center">Education</h1>
@@ -618,24 +682,17 @@
                             <li>Introduction to the Old Testament</li>
                             <li>Race and Ethnic Relations</li>
                         </ul>
-                    </div>
+                    </div><!--column div-->
+                </div><!-- Row div -->
+            </div><!--St Cloud div -->
+        </div><!--Education div -->
+</section><!-- Education section -->
 
-
-                    <!-- Row div -->
-                </div>
-
-
-
-
-
-                <!--St Cloud div -->
-            </div>
-
-
-            <!--Education div -->
-        </div>
-
-
+            
+       
+            
+            
+            
         <footer>
             
                 <p>Website copyright &copy; 2015 Ben Souvignier</p>
@@ -643,10 +700,16 @@
         </footer>
 
 
+</div><!-- ScrollSpy div -->
 
-        <!-- ScrollSpy div -->
-    </div>
-
+        
+        
+        
+        
+        
+        <!--Scripts -->
+        
+        
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -717,7 +780,50 @@
         }); // close out script
     </script>
 
+        
+<!-- Page Overlay -->
+<script>
+        $(function() {
+    $('#activator').click(function(){
+        $('#overlay').fadeIn('fast',function(){
+            $('#box').animate({'top':'100px'},200);
+            $("body").css("overflow", "hidden");
+            $(".box").css("overflow", "auto");
+        });
+    });
+    $('#boxclose').click(function(){
+        $('#box').animate({'top':'-2000px'},200,function(){
+            $('#overlay').fadeOut('fast');
+            $("body").css("overflow", "auto");
+        });
+    });
 
+});
+
+</script>        
+
+<script>
+        $(function() {
+    $('#activator2').click(function(){
+        $('#overlay2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'100px'},200);
+            $("body").css("overflow", "hidden");
+            $(".box2").css("overflow", "auto");
+        });
+    });
+    $('#boxclose').click(function(){
+        $('#box2').animate({'top':'-2000px'},200,function(){
+            $('#overlay2').fadeOut('fast');
+            $("body").css("overflow", "auto");
+        });
+    });
+
+});
+
+</script>  
+        
+        
+        
 </body>
 
 </html>

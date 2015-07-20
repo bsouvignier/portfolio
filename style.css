@@ -7,6 +7,12 @@ body {
     margin-bottom: 30px;
 }
 
+a {
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
 /* This is how to keep the scroll bar fixed to the top of the screen when the scrolling starts and to keep it at 100% width */
 #nav.affix {
     position: fixed;
@@ -53,7 +59,6 @@ h1 {
     height: 500px;
     margin: 0 auto;
     width: 100%;
-    
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 0px 0;
     
@@ -142,20 +147,169 @@ h1 {
     background-color: azure;
     box-shadow: 2px 2px 5px grey;
 }
-
+.portfolio_head {
+    background-color:  #FFA45E;  
+    text-shadow: 2px 2px 2px black;
+}
 #portfolio {
-    
     box-shadow: 5px 5px 5px white;
-    background-color: black;
-    color: azure;
-    text-shadow: 5px 2px 25px white;
+/*    background-color: black; */
+    color: white;
+
+}
+
+.portfolio {
+    position: relative;
+    min-height: 600px;
+    max-height: 700px;
+    height: 100vh;   
+}
+
+.portfolio_item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+}
+.portfolio_item_content {
+    position: absolute;
+    left: 10%;
+    right: 80%;
+    bottom: 48px;
+}
+
+.portfolio_item_title {
+    display: block;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    font: 450% 'Helvetica Neue', Helvetica, Arial;
     
 }
 
+
+.portfolio_item:hover .portfolio_item_content {
+    bottom: 100px;
+}
+.portfolio_item:hover .portfolio_item_2 {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    bottom: 200px;
+}
+.portfolio_item_1 {
+    background-color: #4ED477;
+    height: 100%;
+}
+.portfolio_item_1:hover {
+    background-color: #53A76C;
+    height: 100%;
+    position: absolute;
+}
+.portfolio_item_2 {
+    background-color: #46C0B7;  
+    left: 50%;
+}
+.portfolio_item_2:hover {
+    background-color: #499C96;
+}
+.portfolio_item_3 {
+    background-color: #FF745E;
+    left: 50%;
+    top: 50%;
+}
+.portfolio_item_3:hover {
+    background-color: #FF634B;
+}
+
 #portfolio img {
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 1px 5px black;
     margin-bottom: 10px;
     
+}
+.overlay{
+    background: rgba(62, 138, 159,0.7);
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:900;
+    box-shadow: 10px 10px 10px black;
+}
+.overlay2{
+    background: rgba(78, 212, 119,0.7);
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:900;
+    box-shadow: 10px 10px 10px black;
+}
+.box{
+    position: fixed;
+    top:-2000px;
+    left:10%;
+    right:10%;
+    background-color:#46C0B7;
+    padding:20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:901;
+}
+.box2{
+    position: fixed;
+    top:-2000px;
+    left:10%;
+    right:10%;
+    background-color:#4ED477;
+    padding:20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:901;
+}
+
+.box-content {
+    position: static;
+    overflow: scroll;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.box img {
+    max-height: 100%;
+    max-width: 100%;
+}
+a.boxclose{
+    float:right;
+    width:32px;
+    height:32px;
+    background:transparent url(images/Close_button__32.png) no-repeat top left;
+    margin-top:-20px;
+    margin-right:-20px;
+    cursor:pointer;
+}
+.box h1{
+    text-align: center;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#46C0B7;
+    color:white;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
 }
 
 #carousel-example-generic {
@@ -171,6 +325,7 @@ h1 {
     padding-bottom: 50px;
 }
 #work h1 {
+    color: white;
     text-shadow: 2px 2px 5px black;   
 }
 #ecmpublishers {
@@ -264,9 +419,30 @@ footer {
     padding: 5px;
     
 }
+/*Media query, 1000px fixes some realignment stuff*/
+@media screen and (max-width: 750px) {
 
+.box img {
+    max-height: 50%;
+    max-width: 50%;
+}    
+    
+}
+/*Media query, 1000px */
 
-/*Media query, iPhone6 size device for the headers text */
+/*Media query, 700px fixes some realignment stuff*/
+@media screen and (max-width: 700px) {
+.portfolio_item_title {
+    font: 300% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}    
+.box img {
+    max-height: 100%;
+    max-width: 100%;
+}    
+    
+}
+/*Media query, 700px */
 @media screen and (max-width: 550px) {
 #home {
     background-position: 50% 0px;
@@ -277,7 +453,10 @@ footer {
 #home h2 {
     font-size:1.5em;
 }
+.portfolio_item_title {
+    font: 200% 'Helvetica Neue', Helvetica, Arial, sans-serif;
     
+}    
     
     
 /*End media query 550px*/    }
