@@ -185,7 +185,7 @@ h1 {
     width: 100%;
     overflow: visible;
     position: relative;
-    font: 450% 'Helvetica Neue', Helvetica, Arial;
+    font: 450% 'Helvetica Neue', Helvetica, Arial, sans-serif;
     
 }
 
@@ -198,6 +198,17 @@ h1 {
     left: 60px;
     right: 60px;
     bottom: 200px;
+}
+.rollover-text {
+    visibility: hidden;
+    font: 40% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.portfolio_item:hover .rollover-text {
+    position: relative;
+    bottom: 50px;
+    visibility: visible;
+    font: 30% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    opacity: 1;
 }
 .portfolio_item_1 {
     background-color: #4ED477;
