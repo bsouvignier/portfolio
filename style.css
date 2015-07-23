@@ -2,19 +2,37 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     position: relative;
     margin-bottom: 30px;
     overflow-x: hidden;
 }
-
+h1 {
+    font-size: 50px;   
+    font-weight: 600;
+}
+h2 {
+    font-size: 36px;   
+}
+h3 {
+    font-size: 28px;
+}
+p {
+    font-size: 18px;
+}
 a {
     color: inherit;
 }
+li {
+    font-size: 18px;   
+}
+
 a:hover {
     color: inherit;
 }
 /* This is how to keep the scroll bar fixed to the top of the screen when the scrolling starts and to keep it at 100% width */
+
 #nav.affix {
     position: fixed;
     top: 0;
@@ -24,10 +42,8 @@ a:hover {
     box-shadow: 0px 5px 5px grey;
 }
 
-
 #nav.affix-top {
-    margin-bottom: 0px;  
-    
+    margin-bottom: 0px;
 }
 
 nav {
@@ -35,14 +51,11 @@ nav {
 }
 
 .navbar {
-    
-    width: 100%;   
+    width: 100%;
     border: 0px;
     margin-bottom: 0px;
     z-index: 999;
 }
-
-
 /*
 .navbar-form input, .form-inline input {
 	width:auto;
@@ -52,28 +65,28 @@ nav {
 h1 {
     margin-bottom: 50px;
     margin-top: 50px;
-
 }
+
 #home {
-    background: url(images/tulum-nonickie-cropped.png) 50% -100px fixed;
+    background: url(images/tulum-nonickie-cropped.png) 50% 0px fixed;
     background-size: cover;
     height: 500px;
     margin: 0 auto;
     width: 100%;
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     padding: 0px 0;
-    
 }
 
 .jumbotron {
     height: 500px;
     margin-bottom: 0px;
     background: none;
-/*  background-image: url(images/background.JPG);
+    /*  background-image: url(images/background.JPG);
     background-repeat: no-repeat;
     background-size:cover;
-   */ 
+   */
 }
+
 #home h1 {
     color: white;
     font-size: 5em;
@@ -85,15 +98,15 @@ h1 {
     color: white;
     text-shadow: 1px 1px 4px black;
 }
+
 #home small {
     color: aqua;
     text-shadow: 1px 1px 4px black;
 }
 
 .container {
-    border-radius: 10px;   
+    border-radius: 10px;
 }
-
 /* #about.fixedheader {
     margin-top: 30px;   
 } */
@@ -105,11 +118,11 @@ h1 {
 }
 
 #about p {
-      padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 
 #about h1 {
-    text-shadow: 2px 2px 2px grey;   
+    text-shadow: 2px 2px 2px grey;
 }
 /* #about img {
     float: left;
@@ -117,7 +130,7 @@ h1 {
     max-width: 25%
 } */
 
-.vertical{
+.vertical {
     transform: rotate(90deg);
     height: auto;
     width: auto;
@@ -126,14 +139,15 @@ h1 {
 
 #skills {
     /*Photo from Lifehacker, figure out how to obtain rights to use*/
-    background: url(images/skills.jpg) 0 10% fixed;  
-    background-size: cover;
     
+    background: url(images/skills.jpg) 0 10% fixed;
+    background-size: cover;
     padding-bottom: 50px;
 }
+
 #skills h1 {
     color: white;
-    text-shadow: 1px 1px 5px black;   
+    text-shadow: 2px 2px 5px black;
 }
 
 #skillset {
@@ -141,29 +155,33 @@ h1 {
     box-shadow: 5px 5px 5px darkgray;
     margin-bottom: 50px;
 }
-#skillset ul{
+
+#skillset ul {
     box-shadow: 1px 1px 20px bisque;
 }
+
 #languages {
     background-color: azure;
     box-shadow: 2px 2px 5px grey;
 }
+
 .portfolio_head {
-    background-color:  #FFA45E;  
+    background-color: #FFA45E;
     text-shadow: 2px 2px 2px black;
 }
+
 #portfolio {
     box-shadow: 5px 5px 5px white;
-/*    background-color: black; */
+    /*    background-color: black; */
+    
     color: white;
-
 }
 
 .portfolio {
     position: relative;
     min-height: 500px;
     max-height: 700px;
-    height: 100vh;   
+    height: 100vh;
 }
 
 .portfolio_item {
@@ -174,6 +192,7 @@ h1 {
     width: 50%;
     height: 50%;
 }
+
 .portfolio_item_content {
     position: absolute;
     left: 10%;
@@ -187,23 +206,24 @@ h1 {
     overflow: visible;
     position: relative;
     font: 450% 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    
 }
-
 
 .portfolio_item:hover .portfolio_item_content {
     bottom: 100px;
 }
+
 .portfolio_item:hover .portfolio_item_2 {
     position: absolute;
     left: 60px;
     right: 60px;
     bottom: 200px;
 }
+
 .rollover-text {
     visibility: hidden;
     font: 40% 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 .portfolio_item:hover .rollover-text {
     position: relative;
     bottom: 50px;
@@ -211,27 +231,33 @@ h1 {
     font: 30% 'Helvetica Neue', Helvetica, Arial, sans-serif;
     opacity: 1;
 }
+
 .portfolio_item_1 {
     background-color: #4ED477;
     height: 100%;
 }
+
 .portfolio_item_1:hover {
     background-color: #53A76C;
     height: 100%;
     position: absolute;
 }
+
 .portfolio_item_2 {
-    background-color: #46C0B7;  
+    background-color: #46C0B7;
     left: 50%;
 }
+
 .portfolio_item_2:hover {
     background-color: #499C96;
 }
+
 .portfolio_item_3 {
     background-color: #FF745E;
     left: 50%;
     top: 50%;
 }
+
 .portfolio_item_3:hover {
     background-color: #FF634B;
 }
@@ -239,88 +265,83 @@ h1 {
 #portfolio img {
     box-shadow: 1px 1px 5px black;
     margin-bottom: 10px;
-    
 }
-.overlay{
-    background: rgba(62, 138, 159,0.7);
-    position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    z-index:900;
-    box-shadow: 10px 10px 10px black;
-}
-.overlay2{
-    background: rgba(117, 228, 151,0.7);
-    position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    z-index:900;
-    box-shadow: 10px 10px 10px black;
-}
-.overlay3{
-    background: rgba(255, 148, 131,0.7);
-    position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    z-index:900;
+
+.overlay {
+    background: rgba(62, 138, 159, 0.7);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 900;
     box-shadow: 10px 10px 10px black;
 }
 
-.box{
+.overlay2 {
+    background: rgba(117, 228, 151, 0.7);
     position: fixed;
-    top:-2000px;
-    left:10%;
-    right:10%;
-    background-color:#46C0B7;
-    padding:20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius:20px;
-    -khtml-border-radius:20px;
-    -moz-box-shadow: 0 1px 5px #333;
-    -webkit-box-shadow: 0 1px 5px #333;
-    z-index:901;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 900;
+    box-shadow: 10px 10px 10px black;
+}
+
+.overlay3 {
+    background: rgba(255, 148, 131, 0.7);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 900;
+    box-shadow: 10px 10px 10px black;
+}
+
+.box {
+    position: fixed;
+    top: -2000px;
+    left: 10%;
+    right: 10%;
+    background-color: #46C0B7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px black;
+    z-index: 901;
     overflow-y: scroll;
 }
-.box2{
+
+.box2 {
     position: fixed;
-    top:-2000px;
-    left:10%;
-    right:10%;
-    background-color:#4ED477;
-    padding:20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius:20px;
-    -khtml-border-radius:20px;
-    -moz-box-shadow: 0 1px 5px #333;
-    -webkit-box-shadow: 0 1px 5px #333;
-    z-index:901;
-}
-.box3{
-    position: fixed;
-    top:-2000px;
-    left:10%;
-    right:10%;
-    background-color:#FF745E;
-    padding:20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius:20px;
-    -khtml-border-radius:20px;
-    -moz-box-shadow: 0 1px 5px #333;
-    -webkit-box-shadow: 0 1px 5px #333;
-    z-index:901;
+    top: -2000px;
+    left: 10%;
+    right: 10%;
+    background-color: #4ED477;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px black;
+    z-index: 901;
 }
 
+.box3 {
+    position: fixed;
+    top: -2000px;
+    left: 10%;
+    right: 10%;
+    background-color: #FF745E;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px black;
+    z-index: 901;
+}
 
 .box-content {
     height: 500px;
     position: static;
     overflow: auto;
+    overflow-x: hidden;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -331,69 +352,67 @@ h1 {
     max-height: 100%;
     max-width: 100%;
 }
-a.boxclose{
-    float:right;
-    width:32px;
-    height:32px;
-    background:transparent url(images/Close_button__32.png) no-repeat top left;
-    margin-top:-20px;
-    margin-right:-20px;
-    cursor:pointer;
+
+a.boxclose {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: transparent url(images/Close_button__32.png) no-repeat top left;
+    margin-top: -20px;
+    margin-right: -20px;
+    cursor: pointer;
 }
-a.boxclose2{
-    float:right;
-    width:32px;
-    height:32px;
-    background:transparent url(images/Close_button__32.png) no-repeat top left;
-    margin-top:-20px;
-    margin-right:-20px;
-    cursor:pointer;
+
+a.boxclose2 {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: transparent url(images/Close_button__32.png) no-repeat top left;
+    margin-top: -20px;
+    margin-right: -20px;
+    cursor: pointer;
 }
-a.boxclose3{
-    float:right;
-    width:32px;
-    height:32px;
-    background:transparent url(images/Close_button__32.png) no-repeat top left;
-    margin-top:-20px;
-    margin-right:-20px;
-    cursor:pointer;
+
+a.boxclose3 {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: transparent url(images/Close_button__32.png) no-repeat top left;
+    margin-top: -20px;
+    margin-right: -20px;
+    cursor: pointer;
 }
-.box h1{
+
+.box h1 {
     text-align: center;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
-    background-color:#46C0B7;
-    color:white;
-    -moz-border-radius:20px 20px 0px 0px;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -khtml-border-top-left-radius: 20px;
-    -khtml-border-top-right-radius: 20px;
+    margin: -20px -20px 0px -20px;
+    padding: 10px;
+    background-color: #46C0B7;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
 }
-.box2 h1{
+
+.box2 h1 {
     text-align: center;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
-    background-color:#4ED477;
-    color:white;
-    -moz-border-radius:20px 20px 0px 0px;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -khtml-border-top-left-radius: 20px;
-    -khtml-border-top-right-radius: 20px;
+    margin: -20px -20px 0px -20px;
+    padding: 10px;
+    background-color: #4ED477;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
 }
-.box3 h1{
+.box2 p {
+    padding-top: 20px;   
+}
+
+.box3 h1 {
     text-align: center;
-    margin:-20px -20px 0px -20px;
-    padding:10px;
-    background-color:#FF745E;
-    color:white;
-    -moz-border-radius:20px 20px 0px 0px;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -khtml-border-top-left-radius: 20px;
-    -khtml-border-top-right-radius: 20px;
+    margin: -20px -20px 0px -20px;
+    padding: 10px;
+    background-color: #FF745E;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
 }
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -401,10 +420,11 @@ a.boxclose3{
     height: 0;
     overflow: hidden;
 }
+
 .video-container iframe {
     padding-top: 10px;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -418,42 +438,53 @@ a.boxclose3{
 
 #work {
     /* Stock Photo by Viktor Hanacek from picjumbo.com, Royalty Free, Restriction Free*/
+    
     background: url(images/picjumbo.com_HNCK4400.jpg) 0 20% fixed;
     background-size: cover;
     padding-bottom: 50px;
 }
+
 #work h1 {
     color: white;
-    text-shadow: 2px 2px 5px black;   
+    text-shadow: 2px 2px 5px black;
 }
+
 #ecmpublishers {
     background-color: #00476d;
     color: white;
     box-shadow: 5px 5px 5px black;
 }
+
 #ecmpublishers h2 {
-    text-shadow: 2px 2px 10px black;   
+    text-shadow: 2px 2px 10px black;
 }
+
 #ecmpublishers h3 {
-    text-shadow: 2px 2px 10px black;  
+    text-shadow: 2px 2px 10px black;
 }
+
 #ecmpublishers h4 {
-    text-shadow: 2px 2px 10px black;  
+    text-shadow: 2px 2px 10px black;
 }
+#ecmpublishers ul {
+    box-shadow: 1px 1px 20px #594BCB;
+}
+
 #education {
-    box-shadow: 5px 5px 5px white;
+    box-shadow: 2px 2px 5px white;
     background: url(images/education.jpg) 0 10% fixed;
     background-size: cover;
     padding-bottom: 50px;
 }
+
 #education h1 {
     color: azure;
-    text-shadow: 5px 2px 25px black;
+    text-shadow: 5px 2px 2px black;
 }
 
 #hennepintech {
     box-shadow: 5px 5px 5px black;
-    background: #f26522; 
+    background: #f26522;
     color: #ffffff;
     border-color: #ed560e;
     font-family: "Din", Arial, Helvetica, sans-serif;
@@ -463,27 +494,26 @@ a.boxclose3{
 #hennepintech h2 {
     text-shadow: 1px 1px 10px black;
     font-family: "Din", Arial, Helvetica, sans-serif;
-    
 }
 
 #hennepintech h3 {
     text-shadow: 1px 1px 10px black;
     font-family: "Din", Arial, Helvetica, sans-serif;
-    
 }
+
 #hennepintech h4 {
     text-shadow: 1px 1px 10px black;
-    font-family: "Din", Arial, Helvetica, sans-serif;    
+    font-family: "Din", Arial, Helvetica, sans-serif;
 }
 
 #hennepintech ul {
-    box-shadow: 1px 1px 20px #ed9500;   
+    box-shadow: 1px 1px 20px #ed9500;
 }
 
 #stcloud {
     box-shadow: 5px 5px 5px black;
     margin-top: 50px;
-    background-color: #a72c2d; 
+    background-color: #a72c2d;
     color: #ffffff;
     border-color: #ed560e;
     font-family: "Din", Arial, Helvetica, sans-serif;
@@ -492,18 +522,21 @@ a.boxclose3{
 
 #stcloud h2 {
     text-shadow: 1px 1px 10px black;
-    font-family: "Din", Arial, Helvetica, sans-serif;   
+    font-family: "Din", Arial, Helvetica, sans-serif;
 }
+
 #stcloud h3 {
     text-shadow: 1px 1px 10px black;
-    font-family: "Din", Arial, Helvetica, sans-serif;   
+    font-family: "Din", Arial, Helvetica, sans-serif;
 }
+
 #stcloud h4 {
     text-shadow: 1px 1px 10px black;
-    font-family: "Din", Arial, Helvetica, sans-serif;   
+    font-family: "Din", Arial, Helvetica, sans-serif;
 }
+
 #stcloud ul {
-    box-shadow: 1px 1px 10px #ed5666;   
+    box-shadow: 1px 1px 10px #ed5666;
 }
 
 footer {
@@ -515,122 +548,107 @@ footer {
     color: grey;
     text-align: center;
     padding: 5px;
-    
 }
 /*Media query, 750px fixes some realignment stuff*/
+
 @media screen and (max-width: 750px) {
-
-.box img {
-    max-height: 50%;
-    max-width: 50%;
-}    
-    
+    .box img {
+        max-height: 50%;
+        max-width: 50%;
+    }
+    /*Media query, 750px */
+    /*Media query, 700px fixes some realignment stuff*/
 }
-/*Media query, 750px */
 
-/*Media query, 700px fixes some realignment stuff*/
 @media screen and (max-width: 700px) {
-.portfolio_item_title {
-    font: 300% 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    
-}
-.portfolio_item:hover .rollover-text {
-    bottom: 30px;
-}
-.box img {
-    max-height: 100%;
-    max-width: 100%;
-}    
-    
+    .portfolio_item_title {
+        font: 300% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .portfolio_item:hover .rollover-text {
+        bottom: 30px;
+    }
+    .box img {
+        max-height: 100%;
+        max-width: 100%;
+    }
 }
 /*Media query, 700px */
+
 @media screen and (max-width: 550px) {
-#home {
-    background-position: 50% 0px;
-    background-size: auto;
-    background-repeat: no-repeat;
+    #home {
+        background-position: 50% -100px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #home h1 {
+        font-size: 3.5em;
+    }
+    #home h2 {
+        font-size: 1.5em;
+    }
+    .portfolio_item_title {
+        font: 200% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .portfolio_item:hover .rollover-text {
+        bottom: 25px;
+    }
+    .portfolio {
+        position: relative;
+        min-height: 480px;
+        max-height: 500px;
+        height: auto;
+    }
+    .box-content {
+        height: 400px;
+        /*End media query 550px*/
+    }
+    /*Media query, iPhone4 & 5 size device for the headers text */
 }
-#home h1 {
-    font-size: 3.5em;   
-}
-#home h2 {
-    font-size:1.5em;
-}
-.portfolio_item_title {
-    font: 200% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    @media screen and (max-width: 350px) {
+        #home {
+            background-position: 50% 0px;
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+        #home h1 {
+            font-size: 3em;
+        }
+        #home h2 {
+            font-size: 1.5em;
+        }
+        .portfolio {
+            position: relative;
+            min-height: 300px;
+            max-height: 500px;
+            height: auto;
+        }
+        .box-content {
+            height: 300px;
+            /*End media query 550px*/
+        }
+        /*Media query, For high resolutions */
+    }
+
     
-} 
-.portfolio_item:hover .rollover-text {
-    bottom: 25px;
-}
-.portfolio {
-    position: relative;
-    min-height: 480px;
-    max-height: 500px;
-    height: auto;
-}    
-.box-content {
-    height: 400px;       
+    @media screen and (min-width: 1400px) {
+        #home {
+            background-position: 50% 0px;
+        }
+        /*End media query 1400px*/
+    }
+    /*Media query, For high resolutions */
     
-/*End media query 550px*/    }
-
-/*Media query, iPhone4 & 5 size device for the headers text */
-@media screen and (max-width: 350px) {
-#home {
-    background-position: 50% 0px;
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-#home h1 {
-    font-size: 3em;   
-}
-#home h2 {
-    font-size:1.5em;
-}
-.portfolio {
-    position: relative;
-    min-height: 300px;
-    max-height: 500px;
-    height: auto;
-}    
-.box-content {
-    height: 300px;    
+    @media screen and (min-width: 1920px) {
+        #home {
+            background-position: 50% -100px;
+        }
+        /*End media query 1920px*/
+    }
+    /*Media query, For high resolutions */
     
-/*End media query 550px*/    }
-
-/*Media query, For high resolutions */
-@media screen and (min-width: 1000px) {
-#home {
-    background-position: 50% -100px;
-    background-size: contain;
-}
-     
-/*End media query 1000px*/    }
-
-/*Media query, For high resolutions */
-@media screen and (min-width: 1400px) {
-#home {
-    background-position: 50% -300px;
-}
-     
-/*End media query 1400px*/    }
-
-
-
-
-/*Media query, For high resolutions */
-@media screen and (min-width: 1920px) {
-#home {
-    background-position: 50% -550px;
-}
-        
-/*End media query 1920px*/    }
-
-/*Media query, For high resolutions */
-@media screen and (min-width: 2200px) {
-#home {
-    background-position: 50% -700px;
-}
-}
-/*End media query 2200px*/    
-    
+    @media screen and (min-width: 2200px) {
+        #home {
+            background-position: 50% -200px;
+        }
+        /*End media query 2200px*/
+    }
