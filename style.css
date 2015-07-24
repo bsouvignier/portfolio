@@ -89,9 +89,7 @@ h1 {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     padding: 0px 0;
 }
-.phonenumber {
-    pointer-events: none;   
-}
+
 .jumbotron {
     height: 500px;
     margin-bottom: 0px;
@@ -592,9 +590,7 @@ footer {
         max-height: 100%;
         max-width: 100%;
     }
-                .phonenumber {
-    pointer-events: visible;  
-}
+
 }
 /*Media query, 700px */
 
@@ -627,9 +623,7 @@ footer {
         
         
     }
-            .phonenumber {
-    pointer-events: visible;  
-}
+
     /*End media query 550px*/
     /*Media query, iPhone4 & 5 size device for the headers text */
 }
@@ -645,9 +639,7 @@ footer {
         #home h2 {
             font-size: 1.5em;
         }
-        .phonenumber {
-    pointer-events: visible;  
-}
+        
         .portfolio {
             position: relative;
             min-height: 300px;
