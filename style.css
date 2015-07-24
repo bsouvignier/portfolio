@@ -418,7 +418,9 @@ a.boxclose3 {
 .box2 p {
     padding-top: 20px;   
 }
-
+.box3 {
+    padding-top: 20px;   
+}
 .box3 h1 {
     text-align: center;
     margin: -20px -20px 0px -20px;
@@ -427,7 +429,9 @@ a.boxclose3 {
     color: white;
     border-radius: 20px 20px 0px 0px;
 }
-
+.box3 img {
+    margin-bottom: 10px;   
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
